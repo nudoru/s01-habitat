@@ -22,7 +22,7 @@ injectGlobal`
     min-height: 100vh;
     font-size: ${theme.fontSizes[2]};
     font-family: ${theme.fonts.sansSerif};
-    background-image: ${theme.gradients['cloudy-knoxville']};
+    background-image: ${theme.gradients['premium-white']};
     overflow: hidden;
   }
   h1 {

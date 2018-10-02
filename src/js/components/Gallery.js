@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'react-emotion';
 import {theme} from '../theme/Theme';
 
-
 const Shape = styled('div')`
   transition: all 1.5s ease-out;
   transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
@@ -28,17 +27,6 @@ class Gallery extends React.PureComponent {
 
   componentDidMount() {
   }
-
-  /*
-  let vpH = window.innerHeight,
-      vpW = window.innerWidth,
-      elR = el.getBoundingClientRect(),
-      elH = elR.height,
-      elW = elR.width;
-
-  el.style.left = (vpW / 2) - (elW / 2) + 'px';
-  el.style.top  = (vpH / 2) - (elH / 2) + 'px';
-   */
 
   onSelect = index => e => {
     let cardWidthSel = theme.habitat.cardWidth + theme.habitat.backgroundSizeSelected,
