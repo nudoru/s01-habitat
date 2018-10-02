@@ -1,0 +1,10 @@
+node_modules
+.idea
+.sass-cache
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+*.zip
+.cache
