@@ -4,7 +4,7 @@ import {modularScale, theme} from './Theme';
 // normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css
 // + Customs
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Quicksand');
+  @import url('https://fonts.googleapis.com/css?family=Quicksand|Reenie+Beanie');
 
   *, *::before, *::after {
     box-sizing: border-box;

@@ -6,6 +6,7 @@ import * as Lorem from './utils/Lorem';
 import Art from './components/Art';
 import Gallery from './components/Gallery';
 import Desk from "./components/Desk";
+import Details from "./components/Details";
 
 const CardArt = require('../img/cropped-01.png');
 const BackgroundArt = require('../img/full-01.png');
@@ -24,6 +25,12 @@ const App = () => {
       <TestArt/>
     </Gallery>
     <Desk/>
+    <Details>
+      <h1>Sketch 1</h1>
+      <p>By <a href='https://twitter.com/nudoru'>Matt Perkins</a></p>
+      <p>Inspired by <a href='https://dribbble.com/shots/4934380-Habitat'>Cosmin Capitanu</a></p>
+      <p><a href='https://github.com/nudoru/s01-habitat'>Source code</a></p>
+    </Details>
   </React.Fragment>;
 
 };

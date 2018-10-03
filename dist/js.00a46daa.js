@@ -23586,7 +23586,7 @@ var _emotion = require("emotion");
 var _Theme = require("./Theme");
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css?family=Quicksand');\n\n  *, *::before, *::after {\n    box-sizing: border-box;\n  }\n  html {\n    -ms-text-size-adjust: 100%;\n    -moz-text-size-adjust: 100%;\n    -webkit-text-size-adjust: none;\n    min-height: 100vh;\n    line-height: ", ";\n    font-size: 100%;\n  }\n  body {\n    position: relative;\n    margin: 0;\n    padding: 0;\n    min-height: 100vh;\n    font-size: ", ";\n    font-family: Quicksand;\n    background-image: ", ";\n    overflow: hidden;\n  }\n  h1 {\n    font-size: 2em;\n    margin: 0.67em 0;\n  }\n  hr {\n    box-sizing: content-box;\n    height: 0;\n    overflow: visible;\n  }\n  pre {\n    font-family: monospace, monospace;\n    font-size: 1em;\n  }\n  a {\n    background-color: transparent;\n  }\n  abbr[title] {\n    border-bottom: none; \n    text-decoration: underline; \n    text-decoration: underline dotted; \n  }\n  b,\n  strong {\n    font-weight: bolder;\n  }\n  code,\n  kbd,\n  samp {\n    font-family: monospace, monospace; \n    font-size: 1em; \n  }\n  small {\n    font-size: 80%;\n  }\n  sub,\n  sup {\n    font-size: 75%;\n    line-height: 0;\n    position: relative;\n    vertical-align: baseline;\n  }\n  sub {\n    bottom: -0.25em;\n  }\n  sup {\n    top: -0.5em;\n  }\n  img {\n    border-style: none;\n  }\n  button,\n  input,\n  optgroup,\n  select,\n  textarea {\n    font-family: inherit; \n    font-size: 100%; \n    line-height: 1.15; \n    margin: 0; \n  }\n  button,\n  input { \n    overflow: visible;\n  }\n  button,\n  select { \n    text-transform: none;\n  }\n  button,\n  [type=\"button\"],\n  [type=\"reset\"],\n  [type=\"submit\"] {\n    -webkit-appearance: button;\n  }\n  button::-moz-focus-inner,\n  [type=\"button\"]::-moz-focus-inner,\n  [type=\"reset\"]::-moz-focus-inner,\n  [type=\"submit\"]::-moz-focus-inner {\n    border-style: none;\n    padding: 0;\n  }\n  button:-moz-focusring,\n  [type=\"button\"]:-moz-focusring,\n  [type=\"reset\"]:-moz-focusring,\n  [type=\"submit\"]:-moz-focusring {\n    outline: 1px dotted ButtonText;\n  }\n  fieldset {\n    padding: 0.35em 0.75em 0.625em;\n  }\n  legend {\n    box-sizing: border-box; \n    color: inherit; \n    display: table; \n    max-width: 100%; \n    padding: 0; \n    white-space: normal; \n  }\n  progress {\n    vertical-align: baseline;\n  }\n  textarea {\n    overflow: auto;\n  }\n  [type=\"checkbox\"],\n  [type=\"radio\"] {\n    box-sizing: border-box; \n    padding: 0; \n  }\n  [type=\"number\"]::-webkit-inner-spin-button,\n  [type=\"number\"]::-webkit-outer-spin-button {\n    height: auto;\n  }\n  [type=\"search\"] {\n    -webkit-appearance: textfield; \n    outline-offset: -2px; \n  }\n  [type=\"search\"]::-webkit-search-decoration {\n    -webkit-appearance: none;\n  }\n  ::-webkit-file-upload-button {\n    -webkit-appearance: button; \n    font: inherit; \n  }\n  details {\n    display: block;\n  }\n  summary {\n    display: list-item;\n  }\n  template {\n    display: none;\n  }\n  [hidden] {\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css?family=Quicksand|Reenie+Beanie');\n\n  *, *::before, *::after {\n    box-sizing: border-box;\n  }\n  html {\n    -ms-text-size-adjust: 100%;\n    -moz-text-size-adjust: 100%;\n    -webkit-text-size-adjust: none;\n    min-height: 100vh;\n    line-height: ", ";\n    font-size: 100%;\n  }\n  body {\n    position: relative;\n    margin: 0;\n    padding: 0;\n    min-height: 100vh;\n    font-size: ", ";\n    font-family: Quicksand;\n    background-image: ", ";\n    overflow: hidden;\n  }\n  h1 {\n    font-size: 2em;\n    margin: 0.67em 0;\n  }\n  hr {\n    box-sizing: content-box;\n    height: 0;\n    overflow: visible;\n  }\n  pre {\n    font-family: monospace, monospace;\n    font-size: 1em;\n  }\n  a {\n    background-color: transparent;\n  }\n  abbr[title] {\n    border-bottom: none; \n    text-decoration: underline; \n    text-decoration: underline dotted; \n  }\n  b,\n  strong {\n    font-weight: bolder;\n  }\n  code,\n  kbd,\n  samp {\n    font-family: monospace, monospace; \n    font-size: 1em; \n  }\n  small {\n    font-size: 80%;\n  }\n  sub,\n  sup {\n    font-size: 75%;\n    line-height: 0;\n    position: relative;\n    vertical-align: baseline;\n  }\n  sub {\n    bottom: -0.25em;\n  }\n  sup {\n    top: -0.5em;\n  }\n  img {\n    border-style: none;\n  }\n  button,\n  input,\n  optgroup,\n  select,\n  textarea {\n    font-family: inherit; \n    font-size: 100%; \n    line-height: 1.15; \n    margin: 0; \n  }\n  button,\n  input { \n    overflow: visible;\n  }\n  button,\n  select { \n    text-transform: none;\n  }\n  button,\n  [type=\"button\"],\n  [type=\"reset\"],\n  [type=\"submit\"] {\n    -webkit-appearance: button;\n  }\n  button::-moz-focus-inner,\n  [type=\"button\"]::-moz-focus-inner,\n  [type=\"reset\"]::-moz-focus-inner,\n  [type=\"submit\"]::-moz-focus-inner {\n    border-style: none;\n    padding: 0;\n  }\n  button:-moz-focusring,\n  [type=\"button\"]:-moz-focusring,\n  [type=\"reset\"]:-moz-focusring,\n  [type=\"submit\"]:-moz-focusring {\n    outline: 1px dotted ButtonText;\n  }\n  fieldset {\n    padding: 0.35em 0.75em 0.625em;\n  }\n  legend {\n    box-sizing: border-box; \n    color: inherit; \n    display: table; \n    max-width: 100%; \n    padding: 0; \n    white-space: normal; \n  }\n  progress {\n    vertical-align: baseline;\n  }\n  textarea {\n    overflow: auto;\n  }\n  [type=\"checkbox\"],\n  [type=\"radio\"] {\n    box-sizing: border-box; \n    padding: 0; \n  }\n  [type=\"number\"]::-webkit-inner-spin-button,\n  [type=\"number\"]::-webkit-outer-spin-button {\n    height: auto;\n  }\n  [type=\"search\"] {\n    -webkit-appearance: textfield; \n    outline-offset: -2px; \n  }\n  [type=\"search\"]::-webkit-search-decoration {\n    -webkit-appearance: none;\n  }\n  ::-webkit-file-upload-button {\n    -webkit-appearance: button; \n    font: inherit; \n  }\n  details {\n    display: block;\n  }\n  summary {\n    display: list-item;\n  }\n  template {\n    display: none;\n  }\n  [hidden] {\n    display: none;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -42648,7 +42648,102 @@ Desk.defaultProps = {};
 Desk.propTypes = {};
 var _default = Desk;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-emotion":"../node_modules/react-emotion/dist/index.esm.js","../../img/desk.png":"img/desk.png"}],"img/cropped-01.png":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-emotion":"../node_modules/react-emotion/dist/index.esm.js","../../img/desk.png":"img/desk.png"}],"js/components/Details.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _reactEmotion = _interopRequireDefault(require("react-emotion"));
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  position: absolute;\n  z-index: 999;\n  left: 3rem;\n  bottom: 2rem;\n  color: rgba(0,0,0,0.4);\n  font-family: 'Reenie Beanie', cursive;\n  h1 {\n    font-size: 2rem;\n    margin-bottom: 0.8rem;\n    margin-left: -1rem;\n    letter-spacing: 1px;\n  }\n  p {\n    margin: 0;\n    margin-bottom: -0.2rem;\n    font-size: 1.2rem;\n  }\n  a {\n    text-decoration: none;\n    color: inherit;\n    font-weight: 600;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Shape = (0, _reactEmotion.default)('div')(_templateObject());
+
+var Details =
+/*#__PURE__*/
+function (_React$PureComponent) {
+  _inherits(Details, _React$PureComponent);
+
+  function Details(props) {
+    var _this;
+
+    _classCallCheck(this, Details);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Details).call(this, props));
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(Details, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {}
+  }, {
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          _props$className = _props.className;
+
+      var className = _props$className === undefined ? null : _props$className,
+          children = _props.children,
+          rest = _objectWithoutProperties(_props, ["className", "children"]);
+
+      var cls = [''];
+      cls.push(className);
+      return _react.default.createElement(Shape, _extends({
+        className: cls.join(' ')
+      }, rest), children);
+    }
+  }]);
+
+  return Details;
+}(_react.default.PureComponent);
+
+Details.defaultProps = {};
+Details.propTypes = {};
+var _default = Details;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","prop-types":"../node_modules/prop-types/index.js","react-emotion":"../node_modules/react-emotion/dist/index.esm.js"}],"img/cropped-01.png":[function(require,module,exports) {
 module.exports = "/cropped-01.26079177.png";
 },{}],"img/full-01.png":[function(require,module,exports) {
 module.exports = "/full-01.e0bca25a.png";
@@ -42669,6 +42764,8 @@ var _Gallery = _interopRequireDefault(require("./components/Gallery"));
 
 var _Desk = _interopRequireDefault(require("./components/Desk"));
 
+var _Details = _interopRequireDefault(require("./components/Details"));
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -42687,11 +42784,17 @@ var TestArt = function TestArt(props) {
 };
 
 var App = function App() {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Gallery.default, null, _react.default.createElement(TestArt, null), _react.default.createElement(TestArt, null), _react.default.createElement(TestArt, null), _react.default.createElement(TestArt, null)), _react.default.createElement(_Desk.default, null));
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Gallery.default, null, _react.default.createElement(TestArt, null), _react.default.createElement(TestArt, null), _react.default.createElement(TestArt, null), _react.default.createElement(TestArt, null)), _react.default.createElement(_Desk.default, null), _react.default.createElement(_Details.default, null, _react.default.createElement("h1", null, "Sketch 1"), _react.default.createElement("p", null, "By ", _react.default.createElement("a", {
+    href: "https://twitter.com/nudoru"
+  }, "Matt Perkins")), _react.default.createElement("p", null, "Inspired by ", _react.default.createElement("a", {
+    href: "https://dribbble.com/shots/4934380-Habitat"
+  }, "Cosmin Capitanu")), _react.default.createElement("p", null, _react.default.createElement("a", {
+    href: "https://github.com/nudoru/s01-habitat"
+  }, "Source code"))));
 };
 
 _reactDom.default.render(_react.default.createElement(App, null), document.querySelector('#js-application'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./theme/Global":"js/theme/Global.js","./utils/Lorem":"js/utils/Lorem.js","./components/Art":"js/components/Art.js","./components/Gallery":"js/components/Gallery.js","./components/Desk":"js/components/Desk.js","../img/cropped-01.png":"img/cropped-01.png","../img/full-01.png":"img/full-01.png"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./theme/Global":"js/theme/Global.js","./utils/Lorem":"js/utils/Lorem.js","./components/Art":"js/components/Art.js","./components/Gallery":"js/components/Gallery.js","./components/Desk":"js/components/Desk.js","./components/Details":"js/components/Details.js","../img/cropped-01.png":"img/cropped-01.png","../img/full-01.png":"img/full-01.png"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
