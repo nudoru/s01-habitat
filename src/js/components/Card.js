@@ -7,10 +7,28 @@ const Shape = styled('div')`
   position: relative;
   width: ${theme.habitat.cardWidth}px;
   height: ${theme.habitat.cardHeight}px;
+  padding: 3rem;
   background-color: #fff;
-  box-shadow: ${theme.shadows.dropShadow.xl};
+  box-shadow: ${theme.shadows.dropShadow.bigsoft};
   border-radius: ${theme.radii[1]};
   overflow: hidden;
+  white-space: normal;
+  text-shadow: ${theme.shadows.textLight};
+  img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.25;
+  }
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
 `;
 
 class Card extends React.PureComponent {

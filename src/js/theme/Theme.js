@@ -86,7 +86,7 @@ export const theme = {
     sansSerif: '\'Helvetica Neue\', Helvetica, Arial, sans-serif'
   },
   shadows  : {
-    textLight    : '1px 1px 0 rgba(255,255,255,.75)',
+    textLight    : '1px 1px 3px rgba(255,255,255,.75)',
     textDark     : '1px 1px 0 rgba(0,0,0,.25)',
     textDarkSmall: '1px 1px 3px rgba(0,0,0,.25)',
     textEmboss   :
@@ -96,7 +96,8 @@ export const theme = {
       sm: '0 2px 4px rgba(0,0,0,0.05), 2px 6px 8px -5px rgba(0,0,0,0.15)',
       m : '0 2px 4px rgba(0,0,0,0.05), 4px 8px 15px -7px rgba(0,0,0,0.1), 4px 8px 20px rgba(0,0,0,0.10)',
       lg: '0 1px  6px  rgba(0, 0, 0, .1), 0 8px  8px  rgba(0, 0, 0, .05), 4px 23px 40px -15px rgba(0,0,0,0.15), 8px 30px 64px rgba(0, 0, 0, .1)',
-      xl: '0 1px  6px  rgba(0, 0, 0, .05), 0 8px  8px  rgba(0, 0, 0, .1), 0 16px 16px rgba(0, 0, 0, .1), 4px 32px 32px rgba(0, 0, 0, .05), 8px 50px 64px rgba(0, 0, 0, .15)'
+      xl: '0 1px  6px  rgba(0, 0, 0, .05), 0 8px  8px  rgba(0, 0, 0, .1), 0 16px 16px rgba(0, 0, 0, .1), 4px 32px 32px rgba(0, 0, 0, .05), 8px 50px 64px rgba(0, 0, 0, .15)',
+      bigsoft: '0 16px 16px -20px rgba(0, 0, 0, .05), 4px 32px 64px -50px rgba(0, 0, 0, .05), 8px 70px 128px -20px rgba(0, 0, 0, .2)'
     }
   },
   radii    : ['3px', modularScale.ms0],

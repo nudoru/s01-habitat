@@ -7,7 +7,8 @@ import Background from './Background';
 import {theme} from '../theme/Theme';
 import {NOOP} from "../utils/componentUtils";
 
-//left: ${theme.habitat.backgroundSize / 2}px;
+// Why am I putting all of this here? It should be in Card, but I'm trying to keep
+// that component project neutral :P
 const CardStyle = css`
   transition: all .5s ease-out;
   transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
@@ -23,8 +24,13 @@ const CardStyleSelected = css`
   opacity: 0;
 `;
 
+/*
+Masking slows it down in Chrome? Have alpha PNGs for better perf?
+mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 70%);
+-webkit-mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 70%);
+ */
 const BackgroundStyle = css`
-  opacity: 0.35;
+  opacity: 0.15;
   transition: all 1s ease-out;
   transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
   z-index: 1;
@@ -32,13 +38,13 @@ const BackgroundStyle = css`
   height: ${theme.habitat.cardHeight + theme.habitat.backgroundSize}px;
   background: transparent;
   overflow: hidden;
-  mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 50%,rgba(0,0,0,0) 70%);
-  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 50%,rgba(0,0,0,0) 70%);
   img {
     transition: all 1s ease-out;
     transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
     position: relative;
     transform: translate(${theme.habitat.backgroundSize - theme.habitat.backgroundSizeSelected}px, 0);
+    mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);
   }
 `;
 
@@ -47,6 +53,8 @@ const BackgroundStyleSelected = css`
   width: ${theme.habitat.cardWidth + theme.habitat.backgroundSizeSelected}px;
   img {
     transform: translate(0,0);
+    mask-image: none;
+    -webkit-mask-image: none;
   }
 `;
 

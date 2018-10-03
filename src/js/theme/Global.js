@@ -4,6 +4,8 @@ import {modularScale, theme} from './Theme';
 // normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css
 // + Customs
 injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -21,7 +23,7 @@ injectGlobal`
     padding: 0;
     min-height: 100vh;
     font-size: ${theme.fontSizes[2]};
-    font-family: ${theme.fonts.sansSerif};
+    font-family: Quicksand;
     background-image: ${theme.gradients['premium-white']};
     overflow: hidden;
   }

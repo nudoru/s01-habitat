@@ -23555,7 +23555,7 @@ var theme = {
     sansSerif: '\'Helvetica Neue\', Helvetica, Arial, sans-serif'
   },
   shadows: {
-    textLight: '1px 1px 0 rgba(255,255,255,.75)',
+    textLight: '1px 1px 3px rgba(255,255,255,.75)',
     textDark: '1px 1px 0 rgba(0,0,0,.25)',
     textDarkSmall: '1px 1px 3px rgba(0,0,0,.25)',
     textEmboss: '-1px -1px 0 rgba(0, 0, 0, .15), 1px 1px 0 rgba(255, 255, 255, .1)',
@@ -23564,7 +23564,8 @@ var theme = {
       sm: '0 2px 4px rgba(0,0,0,0.05), 2px 6px 8px -5px rgba(0,0,0,0.15)',
       m: '0 2px 4px rgba(0,0,0,0.05), 4px 8px 15px -7px rgba(0,0,0,0.1), 4px 8px 20px rgba(0,0,0,0.10)',
       lg: '0 1px  6px  rgba(0, 0, 0, .1), 0 8px  8px  rgba(0, 0, 0, .05), 4px 23px 40px -15px rgba(0,0,0,0.15), 8px 30px 64px rgba(0, 0, 0, .1)',
-      xl: '0 1px  6px  rgba(0, 0, 0, .05), 0 8px  8px  rgba(0, 0, 0, .1), 0 16px 16px rgba(0, 0, 0, .1), 4px 32px 32px rgba(0, 0, 0, .05), 8px 50px 64px rgba(0, 0, 0, .15)'
+      xl: '0 1px  6px  rgba(0, 0, 0, .05), 0 8px  8px  rgba(0, 0, 0, .1), 0 16px 16px rgba(0, 0, 0, .1), 4px 32px 32px rgba(0, 0, 0, .05), 8px 50px 64px rgba(0, 0, 0, .15)',
+      bigsoft: '0 16px 16px -20px rgba(0, 0, 0, .05), 4px 32px 64px -50px rgba(0, 0, 0, .05), 8px 70px 128px -20px rgba(0, 0, 0, .2)'
     }
   },
   radii: ['3px', modularScale.ms0],
@@ -23585,7 +23586,7 @@ var _emotion = require("emotion");
 var _Theme = require("./Theme");
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  *, *::before, *::after {\n    box-sizing: border-box;\n  }\n  html {\n    -ms-text-size-adjust: 100%;\n    -moz-text-size-adjust: 100%;\n    -webkit-text-size-adjust: none;\n    min-height: 100vh;\n    line-height: ", ";\n    font-size: 100%;\n  }\n  body {\n    position: relative;\n    margin: 0;\n    padding: 0;\n    min-height: 100vh;\n    font-size: ", ";\n    font-family: ", ";\n    background-image: ", ";\n    overflow: hidden;\n  }\n  h1 {\n    font-size: 2em;\n    margin: 0.67em 0;\n  }\n  hr {\n    box-sizing: content-box;\n    height: 0;\n    overflow: visible;\n  }\n  pre {\n    font-family: monospace, monospace;\n    font-size: 1em;\n  }\n  a {\n    background-color: transparent;\n  }\n  abbr[title] {\n    border-bottom: none; \n    text-decoration: underline; \n    text-decoration: underline dotted; \n  }\n  b,\n  strong {\n    font-weight: bolder;\n  }\n  code,\n  kbd,\n  samp {\n    font-family: monospace, monospace; \n    font-size: 1em; \n  }\n  small {\n    font-size: 80%;\n  }\n  sub,\n  sup {\n    font-size: 75%;\n    line-height: 0;\n    position: relative;\n    vertical-align: baseline;\n  }\n  sub {\n    bottom: -0.25em;\n  }\n  sup {\n    top: -0.5em;\n  }\n  img {\n    border-style: none;\n  }\n  button,\n  input,\n  optgroup,\n  select,\n  textarea {\n    font-family: inherit; \n    font-size: 100%; \n    line-height: 1.15; \n    margin: 0; \n  }\n  button,\n  input { \n    overflow: visible;\n  }\n  button,\n  select { \n    text-transform: none;\n  }\n  button,\n  [type=\"button\"],\n  [type=\"reset\"],\n  [type=\"submit\"] {\n    -webkit-appearance: button;\n  }\n  button::-moz-focus-inner,\n  [type=\"button\"]::-moz-focus-inner,\n  [type=\"reset\"]::-moz-focus-inner,\n  [type=\"submit\"]::-moz-focus-inner {\n    border-style: none;\n    padding: 0;\n  }\n  button:-moz-focusring,\n  [type=\"button\"]:-moz-focusring,\n  [type=\"reset\"]:-moz-focusring,\n  [type=\"submit\"]:-moz-focusring {\n    outline: 1px dotted ButtonText;\n  }\n  fieldset {\n    padding: 0.35em 0.75em 0.625em;\n  }\n  legend {\n    box-sizing: border-box; \n    color: inherit; \n    display: table; \n    max-width: 100%; \n    padding: 0; \n    white-space: normal; \n  }\n  progress {\n    vertical-align: baseline;\n  }\n  textarea {\n    overflow: auto;\n  }\n  [type=\"checkbox\"],\n  [type=\"radio\"] {\n    box-sizing: border-box; \n    padding: 0; \n  }\n  [type=\"number\"]::-webkit-inner-spin-button,\n  [type=\"number\"]::-webkit-outer-spin-button {\n    height: auto;\n  }\n  [type=\"search\"] {\n    -webkit-appearance: textfield; \n    outline-offset: -2px; \n  }\n  [type=\"search\"]::-webkit-search-decoration {\n    -webkit-appearance: none;\n  }\n  ::-webkit-file-upload-button {\n    -webkit-appearance: button; \n    font: inherit; \n  }\n  details {\n    display: block;\n  }\n  summary {\n    display: list-item;\n  }\n  template {\n    display: none;\n  }\n  [hidden] {\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  @import url('https://fonts.googleapis.com/css?family=Quicksand');\n\n  *, *::before, *::after {\n    box-sizing: border-box;\n  }\n  html {\n    -ms-text-size-adjust: 100%;\n    -moz-text-size-adjust: 100%;\n    -webkit-text-size-adjust: none;\n    min-height: 100vh;\n    line-height: ", ";\n    font-size: 100%;\n  }\n  body {\n    position: relative;\n    margin: 0;\n    padding: 0;\n    min-height: 100vh;\n    font-size: ", ";\n    font-family: Quicksand;\n    background-image: ", ";\n    overflow: hidden;\n  }\n  h1 {\n    font-size: 2em;\n    margin: 0.67em 0;\n  }\n  hr {\n    box-sizing: content-box;\n    height: 0;\n    overflow: visible;\n  }\n  pre {\n    font-family: monospace, monospace;\n    font-size: 1em;\n  }\n  a {\n    background-color: transparent;\n  }\n  abbr[title] {\n    border-bottom: none; \n    text-decoration: underline; \n    text-decoration: underline dotted; \n  }\n  b,\n  strong {\n    font-weight: bolder;\n  }\n  code,\n  kbd,\n  samp {\n    font-family: monospace, monospace; \n    font-size: 1em; \n  }\n  small {\n    font-size: 80%;\n  }\n  sub,\n  sup {\n    font-size: 75%;\n    line-height: 0;\n    position: relative;\n    vertical-align: baseline;\n  }\n  sub {\n    bottom: -0.25em;\n  }\n  sup {\n    top: -0.5em;\n  }\n  img {\n    border-style: none;\n  }\n  button,\n  input,\n  optgroup,\n  select,\n  textarea {\n    font-family: inherit; \n    font-size: 100%; \n    line-height: 1.15; \n    margin: 0; \n  }\n  button,\n  input { \n    overflow: visible;\n  }\n  button,\n  select { \n    text-transform: none;\n  }\n  button,\n  [type=\"button\"],\n  [type=\"reset\"],\n  [type=\"submit\"] {\n    -webkit-appearance: button;\n  }\n  button::-moz-focus-inner,\n  [type=\"button\"]::-moz-focus-inner,\n  [type=\"reset\"]::-moz-focus-inner,\n  [type=\"submit\"]::-moz-focus-inner {\n    border-style: none;\n    padding: 0;\n  }\n  button:-moz-focusring,\n  [type=\"button\"]:-moz-focusring,\n  [type=\"reset\"]:-moz-focusring,\n  [type=\"submit\"]:-moz-focusring {\n    outline: 1px dotted ButtonText;\n  }\n  fieldset {\n    padding: 0.35em 0.75em 0.625em;\n  }\n  legend {\n    box-sizing: border-box; \n    color: inherit; \n    display: table; \n    max-width: 100%; \n    padding: 0; \n    white-space: normal; \n  }\n  progress {\n    vertical-align: baseline;\n  }\n  textarea {\n    overflow: auto;\n  }\n  [type=\"checkbox\"],\n  [type=\"radio\"] {\n    box-sizing: border-box; \n    padding: 0; \n  }\n  [type=\"number\"]::-webkit-inner-spin-button,\n  [type=\"number\"]::-webkit-outer-spin-button {\n    height: auto;\n  }\n  [type=\"search\"] {\n    -webkit-appearance: textfield; \n    outline-offset: -2px; \n  }\n  [type=\"search\"]::-webkit-search-decoration {\n    -webkit-appearance: none;\n  }\n  ::-webkit-file-upload-button {\n    -webkit-appearance: button; \n    font: inherit; \n  }\n  details {\n    display: block;\n  }\n  summary {\n    display: list-item;\n  }\n  template {\n    display: none;\n  }\n  [hidden] {\n    display: none;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -23598,8 +23599,513 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 // normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css
 // + Customs
-(0, _emotion.injectGlobal)(_templateObject(), _Theme.modularScale.ms2, _Theme.theme.fontSizes[2], _Theme.theme.fonts.sansSerif, _Theme.theme.gradients['premium-white']);
-},{"emotion":"../node_modules/emotion/dist/index.esm.js","./Theme":"js/theme/Theme.js"}],"../node_modules/prop-types/factoryWithTypeCheckers.js":[function(require,module,exports) {
+(0, _emotion.injectGlobal)(_templateObject(), _Theme.modularScale.ms2, _Theme.theme.fontSizes[2], _Theme.theme.gradients['premium-white']);
+},{"emotion":"../node_modules/emotion/dist/index.esm.js","./Theme":"js/theme/Theme.js"}],"js/utils/Toolbox.js":[function(require,module,exports) {
+var _this = this;
+
+/*eslint no-undef: "error"*/
+
+/*eslint-env node*/
+
+/*
+ Collected utility functions
+ */
+
+/*******************************************************************************
+ * Determination
+ *******************************************************************************/
+var existy = function existy(x) {
+  return x != null; // eslint-disable-line eqeqeq
+};
+
+var truthy = function truthy(x) {
+  return x !== false && existy(x);
+};
+
+var falsey = function falsey(x) {
+  return !truthy(x);
+};
+
+module.exports.existy = existy;
+module.exports.truthy = truthy;
+module.exports.falsey = falsey;
+
+module.exports.isFunction = function (object) {
+  return typeof object === "function";
+};
+
+module.exports.isObject = function (object) {
+  var type = {}.toString;
+  return type.call(object) === "[object Object]";
+};
+
+module.exports.isString = function (object) {
+  var type = {}.toString;
+  return type.call(object) === "[object String]";
+};
+
+module.exports.isPromise = function (promise) {
+  return promise && typeof promise.then === 'function';
+};
+
+module.exports.isObservable = function (observable) {
+  return observable && typeof observable.subscribe === 'function';
+};
+/*******************************************************************************
+ * Number
+ *******************************************************************************/
+
+
+module.exports.isInteger = function (str) {
+  return /^-?\d+$/.test(str);
+};
+
+var rndNumber = function rndNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+module.exports.rndNumber = rndNumber;
+
+module.exports.clamp = function (val, min, max) {
+  return Math.max(min, Math.min(max, val));
+};
+
+module.exports.inRange = function (val, min, max) {
+  return val > min && val < max;
+};
+
+module.exports.distanceTL = function (point1, point2) {
+  var xd = point2.left - point1.left,
+      yd = point2.top - point1.top;
+  return Math.sqrt(xd * xd + yd * yd);
+};
+/*******************************************************************************
+ * String
+ *******************************************************************************/
+
+
+module.exports.capitalizeFirstLetterStr = function (str) {
+  return str.charAt(0).toUpperCase() + str.substring(1);
+};
+
+module.exports.toTitleCaseStr = function (str) {
+  return str.replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1);
+  });
+};
+
+module.exports.removeTagsStr = function (str) {
+  return str.replace(/(<([^>]+)>)/ig, '');
+};
+
+module.exports.removeEntityStr = function (str) {
+  return str.replace(/(&(#?)(?:[a-z\d]+|#\d+|#x[a-f\d]+);)/ig, '');
+};
+
+module.exports.ellipsesStr = function (str, len) {
+  return str.length > len ? str.substr(0, len) + "..." : str;
+}; // Removes spaces, tabs and new lines
+
+
+module.exports.removeWhiteSpace = function (str) {
+  return str.replace(/(\r\n|\n|\r|\t|\s)/gm, '').replace(/>\s+</g, '><');
+};
+
+module.exports.slugify = function (str) {
+  return str.split(' ').map(function (s) {
+    return s.toLowerCase();
+  }).join('_');
+};
+
+module.exports.unslugify = function (str) {
+  return str.split('_').map(function (s) {
+    return s.charAt(0).toUpperCase() + s.substring(1);
+  }).join(' ');
+};
+/*******************************************************************************
+ * Array
+ *******************************************************************************/
+
+
+module.exports.removeArrDupes = function (list) {
+  // Using a normal object instead of a map
+  var dupes = {};
+  return list.reduce(function (acc, curr) {
+    // Check if the current object is in the `dupes` object
+    if (dupes[curr]) {
+      return acc;
+    } // Add the current object as a field to `dupes`
+
+
+    dupes[curr] = true;
+    acc.push(curr);
+    return acc;
+  }, []);
+}; // http://www.shamasis.net/2009/09/fast-algorithm-to-find-unique-items-in-javascript-array/
+
+
+module.exports.uniqueArry = function (arry) {
+  var o = {},
+      i,
+      l = arry.length,
+      r = [];
+
+  for (i = 0; i < l; i += 1) {
+    o[arry[i]] = arry[i];
+  }
+
+  for (i in o) {
+    r.push(o[i]);
+  }
+
+  return r;
+};
+
+module.exports.getArryDifferences = function (arr1, arr2) {
+  var dif = [];
+  arr1.forEach(function (value) {
+    var present = false,
+        i = 0,
+        len = arr2.length;
+
+    for (; i < len; i++) {
+      if (value === arr2[i]) {
+        present = true;
+        break;
+      }
+    }
+
+    if (!present) {
+      dif.push(value);
+    }
+  });
+  return dif;
+};
+
+module.exports.arryArryToArryObj = function (src, keys) {
+  return src.reduce(function (p, c) {
+    var row = {};
+    keys.forEach(function (col, i) {
+      row[col] = c[i];
+    });
+    p.push(row);
+    return p;
+  }, []);
+};
+
+module.exports.rndElement = function (arry) {
+  return arry[rndNumber(0, arry.length - 1)];
+};
+
+module.exports.getRandomSetOfElements = function (srcarry, max) {
+  var arry = [],
+      i = 0,
+      len = rndNumber(1, max);
+
+  for (; i < len; i++) {
+    arry.push(_this.rndElement(srcarry));
+  }
+
+  return arry;
+};
+
+module.exports.fillIntArray = function (start, end) {
+  return Array.apply(null, {
+    length: end + 1 - start
+  }).reduce(function (p, c, i) {
+    p.push(i + start);
+    return p;
+  }, []);
+}; //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+
+module.exports.shuffleArray = function (array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    // eslint-disable-line no-param-reassign
+    var _ref = [array[j], array[i]];
+    array[i] = _ref[0];
+    array[j] = _ref[1];
+  }
+
+  return array;
+};
+/*******************************************************************************
+ * Objects
+ *******************************************************************************/
+
+/**
+ * Test for
+ * Object {"": undefined}
+ * Object {undefined: undefined}
+ * @param obj
+ * @returns {boolean}
+ */
+
+
+module.exports.isNullObj = function (obj) {
+  var isnull = false;
+
+  if (falsey(obj)) {
+    return true;
+  }
+
+  for (var prop in obj) {
+    if (prop === undefined || obj[prop] === undefined) {
+      isnull = true;
+    }
+
+    break;
+  }
+
+  return isnull;
+};
+
+module.exports.dynamicSortObjArry = function (property) {
+  return function (a, b) {
+    return a[property] < b[property] ? -1 : a[property] > b[property] ? 1 : 0;
+  };
+};
+/**
+ * Turn an object of {paramname:value[,...]} into paramname=value[&...] for a
+ * URL rest query
+ */
+
+
+module.exports.getParameterString = function (objArry) {
+  return Object.keys(objArry).reduce(function (p, c, i) {
+    p += (i > 0 ? '&' : '') + c + '=' + encodeURIComponent(objArry[c]);
+    return p;
+  }, '');
+};
+
+module.exports.decodeParameterString = function (str) {
+  return str.split('&').reduce(function (p, c) {
+    var pair = c.split('=');
+    p[pair[0]] = decodeURIComponent(pair[1]);
+    return p;
+  }, {});
+};
+/*******************************************************************************
+ * Determination
+ *******************************************************************************/
+
+
+module.exports.sleep = function (time) {
+  return new Promise(function (resolve) {
+    window.setTimeout(resolve, time);
+  });
+};
+/*******************************************************************************
+ * Time
+ * Created while working with Moodle web services
+ *******************************************************************************/
+
+
+module.exports.getMatchDates = function (str) {
+  return str.match(/\s*(?:(?:jan|feb)?r?(?:uary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|oct(?:ober)?|(?:sept?|nov|dec)(?:ember)?)\s+\d{1,2}\s*,?\s*\d{4}/ig);
+};
+
+module.exports.getMatchTimes = function (str) {
+  return str.match(/(\d{1,2})\s*:\s*(\d{2})\s*([ap]m?)/ig);
+};
+
+function hrTo24(hr, pm) {
+  hr = parseInt(hr);
+  var fhr = (hr === 12 ? 0 : hr) + (pm ? 12 : 0);
+
+  if (fhr < 10) {
+    fhr = '0' + fhr;
+  }
+
+  return fhr;
+}
+
+function formatSecondsToHHMM(seconds) {
+  var d = Number(seconds);
+  var h = Math.floor(d / 3600);
+  var m = Math.floor(d % 3600 / 60);
+  return (h > 0 ? h + ":" + (m < 10 ? "0" : "") : "") + m;
+} // Convert one of these 9:00 AM, 5:00 PM to 09:00 or 17:00
+
+
+module.exports.convertTimeStrToHourStr = function (str, is24) {
+  var parts = str.toLowerCase().split(' '),
+      time = parts[0].split(':'),
+      hr = is24 ? hrTo24(time[0], parts[1] === 'pm') : time[0];
+  return [hr, time[1]].join(':');
+};
+
+module.exports.formatSecondsToDate = function (seconds) {
+  return new Date(parseInt(seconds * 1000)).toLocaleDateString();
+};
+
+module.exports.formatSecondsToDate2 = function (seconds) {
+  return new Date(parseInt(seconds * 1000));
+};
+
+module.exports.formatSecondsToHHMM = formatSecondsToHHMM;
+module.exports.hrTo24 = hrTo24;
+
+module.exports.formatSecDurationToStr = function (seconds) {
+  var hhmm = formatSecondsToHHMM(seconds),
+      split = hhmm.split(':'),
+      tothrs = parseInt(split[0]),
+      days = Math.floor(tothrs / 8),
+      hrs = tothrs % 8,
+      mins = parseInt(split[1]);
+  return (days ? days + ' days' : '') + (hrs ? ' ' + hrs + ' hrs' : '') + (mins ? ' ' + mins + ' mins' : '');
+};
+/*******************************************************************************
+ * DOM
+ *******************************************************************************/
+},{}],"js/utils/Lorem.js":[function(require,module,exports) {
+var _currentText = [],
+    _defaultTextSet,
+    _maleFirstNames = [],
+    _femaleFirstNames = [],
+    _lastNames = [],
+    _punctuation = [],
+    _months,
+    _days,
+    _toolbox = require('./Toolbox');
+
+_defaultTextSet = 'Perhaps a re-engineering of your current world view will re-energize your online nomenclature to enable a new holistic interactive enterprise internet communication solution Upscaling the resurgent networking exchange solutions achieving a breakaway systemic electronic data interchange system synchronization thereby exploiting technical environments for mission critical broad based capacity constrained systems Fundamentally transforming well designed actionable information whose semantic content is virtually null To more fully clarify the current exchange a few aggregate issues will require addressing to facilitate this distributed communication venue In integrating non-aligned structures into existing legacy systems a holistic gateway blueprint is a backward compatible packaging tangible';
+_lastNames = 'Smith Johnson Williams Jones Brown Davis Miller Wilson Moore Taylor Anderson Thomas Jackson White Harris Martin Thompson Garcia Martinez Robinson Clark Rodriguez Lewis Lee Walker Hall Allen Young Hernandez King Wright Lopez Hill Scott Green Adams Baker Gonzalez Nelson Carter Mitchell Perez Roberts Turner Phillips Campbell Parker Evans Edwards Collins Stewart Sanchez Morris Rogers Reed Cook Morgan Bell Murphy'.split(' ');
+_maleFirstNames = 'Thomas Arthur Lewis Clarence Leonard Albert Paul Carl Ralph Roy Earl Samuel Howard Richard Francis Laurence Herbert Elmer Ernest Theodore David Alfred Donald Russell Eugene Andrew Kenneth Herman Jesse Lester Floyd Michael Edwin Clifford Benjamin Clyde Glen Oscar Daniel'.split(' ');
+_femaleFirstNames = 'Elizabeth Ann Helen Margaret Ellen Catherine Lily Florence Ada Lou Ethel Emily Ruth Rose Frances Alice Bertha Clara Mabel Minnie Grace Jane Evelyn Gertrude Edna Pearl Laura Hazel Edith Esther Harriet Sarah May Matilda Martha Myrtle Josephine Maud Agnes Keri Julia Irene Mildred Cora'.split(' ');
+_punctuation = ['.', '.', '.', '.', '?', '!'];
+_months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+_days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+_currentText = _defaultTextSet.toLowerCase().split(' ');
+
+function rNumber(min, max) {
+  return _toolbox.rndNumber(min, max);
+}
+
+function oneOf(arry) {
+  return arry[rNumber(0, arry.length - 1)];
+}
+
+function severalOf(num, arry) {
+  if (num >= arry.length) {
+    return arry;
+  }
+
+  var res = [];
+
+  for (var i = 0; i < num; i++) {
+    res.push(oneOf(arry));
+  }
+
+  return res;
+}
+
+function sentence(min, max) {
+  return _toolbox.capitalizeFirstLetterStr(text(min, max)) + oneOf(_punctuation);
+}
+
+function title(min, max) {
+  return _toolbox.toTitleCaseStr(text(min, max));
+}
+
+function paragraph(min, max) {
+  var str = '',
+      delim = ' ',
+      len = rNumber(min, max),
+      i = 0;
+
+  for (; i < len; i++) {
+    if (i === len - 1) {
+      delim = '';
+    }
+
+    str += sentence(1, 10) + delim;
+  }
+
+  return str;
+}
+
+function text(min, max) {
+  var str = '',
+      delim = ' ',
+      len = rNumber(min, max),
+      i = 0;
+
+  for (; i < len; i++) {
+    if (i === len - 1) {
+      delim = '';
+    }
+
+    str += oneOf(_currentText) + delim;
+  }
+
+  return str;
+}
+
+function getFirstName() {
+  return rNumber(0, 1) ? oneOf(_maleFirstNames) : oneOf(_femaleFirstNames);
+}
+
+function getLastName() {
+  return oneOf(_lastNames);
+}
+
+function firstLastName() {
+  return getFirstName() + ' ' + getLastName();
+}
+
+function lastFirstName() {
+  return getLastName() + ', ' + getFirstName();
+}
+/**
+ * Better implementation http://stackoverflow.com/questions/9035627/elegant-method-to-generate-array-of-random-dates-within-two-dates
+ * @returns {{monthNumber: *, monthName: *, monthDay, weekDayNumber: *, weekDay: *, year}}
+ */
+
+
+function date() {
+  var month = rNumber(0, 11),
+      wkday = rNumber(0, 4),
+      date = {
+    monthNumber: month + 1,
+    monthName: _months[month],
+    monthDay: rNumber(1, 28),
+    weekDayNumber: wkday + 1,
+    weekDay: _days[wkday],
+    year: _toolbox.rndElement(['2017'])
+  };
+  date.string = date.monthName + ' ' + date.monthDay + ', ' + date.year;
+  return date;
+}
+/**
+ * http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
+ * @returns {string}
+ */
+
+
+function guid() {
+  function s4() {
+    return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+  }
+
+  return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+}
+
+module.exports = {
+  rNumber: rNumber,
+  oneOf: oneOf,
+  severalOf: severalOf,
+  text: text,
+  sentence: sentence,
+  title: title,
+  paragraph: paragraph,
+  firstLastName: firstLastName,
+  lastFirstName: lastFirstName,
+  date: date,
+  guid: guid
+};
+},{"./Toolbox":"js/utils/Toolbox.js"}],"../node_modules/prop-types/factoryWithTypeCheckers.js":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -24550,7 +25056,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  position: relative;\n  width: ", "px;\n  height: ", "px;\n  background-color: #fff;\n  box-shadow: ", ";\n  border-radius: ", ";\n  overflow: hidden;\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  width: ", "px;\n  height: ", "px;\n  padding: 3rem;\n  background-color: #fff;\n  box-shadow: ", ";\n  border-radius: ", ";\n  overflow: hidden;\n  white-space: normal;\n  text-shadow: ", ";\n  img {\n    z-index: -1;\n    position: absolute;\n    top: 0;\n    left: 0;\n    opacity: 0.25;\n  }\n  h1 {\n    font-size: 1.2rem;\n    font-weight: 400;\n    margin-bottom: 2rem;\n  }\n  p {\n    font-size: 0.8rem;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -24563,7 +25069,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-var Shape = (0, _reactEmotion.default)('div')(_templateObject(), _Theme.theme.habitat.cardWidth, _Theme.theme.habitat.cardHeight, _Theme.theme.shadows.dropShadow.xl, _Theme.theme.radii[1]);
+var Shape = (0, _reactEmotion.default)('div')(_templateObject(), _Theme.theme.habitat.cardWidth, _Theme.theme.habitat.cardHeight, _Theme.theme.shadows.dropShadow.bigsoft, _Theme.theme.radii[1], _Theme.theme.shadows.textLight);
 
 var Card =
 /*#__PURE__*/
@@ -41745,7 +42251,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  opacity: 1;\n  width: ", "px;\n  img {\n    transform: translate(0,0);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  opacity: 1;\n  width: ", "px;\n  img {\n    transform: translate(0,0);\n    mask-image: none;\n    -webkit-mask-image: none;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -41755,7 +42261,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  opacity: 0.35;\n  transition: all 1s ease-out;\n  transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);\n  z-index: 1;\n  width: ", "px;\n  height: ", "px;\n  background: transparent;\n  overflow: hidden;\n  mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 50%,rgba(0,0,0,0) 70%);\n  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 50%,rgba(0,0,0,0) 70%);\n  img {\n    transition: all 1s ease-out;\n    transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);\n    position: relative;\n    transform: translate(", "px, 0);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  opacity: 0.15;\n  transition: all 1s ease-out;\n  transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);\n  z-index: 1;\n  width: ", "px;\n  height: ", "px;\n  background: transparent;\n  overflow: hidden;\n  img {\n    transition: all 1s ease-out;\n    transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);\n    position: relative;\n    transform: translate(", "px, 0);\n    mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);\n    -webkit-mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -41788,10 +42294,17 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-//left: ${theme.habitat.backgroundSize / 2}px;
+// Why am I putting all of this here? It should be in Card, but I'm trying to keep
+// that component project neutral :P
 var CardStyle = (0, _emotion.css)(_templateObject(), _Theme.theme.habitat.backgroundSize / 2, _Theme.theme.habitat.backgroundSize / 2); //left: ${theme.habitat.backgroundSizeSelected / 2}px;
 
 var CardStyleSelected = (0, _emotion.css)(_templateObject2(), _Theme.theme.habitat.backgroundSizeSelected / 2, _Theme.theme.habitat.backgroundSize / 2);
+/*
+Masking slows it down in Chrome? Have alpha PNGs for better perf?
+mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 70%);
+-webkit-mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 70%);
+ */
+
 var BackgroundStyle = (0, _emotion.css)(_templateObject3(), _Theme.theme.habitat.cardWidth + _Theme.theme.habitat.backgroundSize, _Theme.theme.habitat.cardHeight + _Theme.theme.habitat.backgroundSize, _Theme.theme.habitat.backgroundSize - _Theme.theme.habitat.backgroundSizeSelected);
 var BackgroundStyleSelected = (0, _emotion.css)(_templateObject4(), _Theme.theme.habitat.cardWidth + _Theme.theme.habitat.backgroundSizeSelected);
 var Shape = (0, _reactEmotion.default)('div')(_templateObject5(), _Theme.theme.habitat.cardWidth + _Theme.theme.habitat.backgroundSize);
@@ -42148,11 +42661,15 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _Global = _interopRequireDefault(require("./theme/Global"));
 
+var Lorem = _interopRequireWildcard(require("./utils/Lorem"));
+
 var _Art = _interopRequireDefault(require("./components/Art"));
 
 var _Gallery = _interopRequireDefault(require("./components/Gallery"));
 
 var _Desk = _interopRequireDefault(require("./components/Desk"));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42164,7 +42681,7 @@ var BackgroundArt = require('../img/full-01.png');
 var TestArt = function TestArt(props) {
   return _react.default.createElement(_Art.default, props, _react.default.createElement(_Art.default.ACard, null, _react.default.createElement("img", {
     src: CardArt
-  })), _react.default.createElement(_Art.default.ABackground, null, _react.default.createElement("img", {
+  }), _react.default.createElement("h1", null, Lorem.title(3, 5)), _react.default.createElement("p", null, Lorem.title(10, 15))), _react.default.createElement(_Art.default.ABackground, null, _react.default.createElement("img", {
     src: BackgroundArt
   })));
 };
@@ -42174,7 +42691,7 @@ var App = function App() {
 };
 
 _reactDom.default.render(_react.default.createElement(App, null), document.querySelector('#js-application'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./theme/Global":"js/theme/Global.js","./components/Art":"js/components/Art.js","./components/Gallery":"js/components/Gallery.js","./components/Desk":"js/components/Desk.js","../img/cropped-01.png":"img/cropped-01.png","../img/full-01.png":"img/full-01.png"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./theme/Global":"js/theme/Global.js","./utils/Lorem":"js/utils/Lorem.js","./components/Art":"js/components/Art.js","./components/Gallery":"js/components/Gallery.js","./components/Desk":"js/components/Desk.js","../img/cropped-01.png":"img/cropped-01.png","../img/full-01.png":"img/full-01.png"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
