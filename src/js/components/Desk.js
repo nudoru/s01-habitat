@@ -12,27 +12,4 @@ const Shape =  styled('div')`
   z-index: 99;
 `;
 
-class Desk extends React.PureComponent {
-
-  static defaultProps = {};
-  static propTypes = {};
-
-  state = {};
-
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {}
-
-  render() {
-    const {className=null, children, ...rest} = this.props;
-
-    let cls = [''];
-    cls.push(className);
-
-    return (<Shape className={cls.join(' ')} {...rest}><img src={DeskImg} alt='A modern desk and chair' /></Shape>);
-  }
-}
-
-export default Desk;
+export const Desk = ({children, ...rest}) => <Shape {...rest}><img src={DeskImg} alt='A modern desk and chair' /></Shape>;

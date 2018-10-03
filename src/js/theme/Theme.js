@@ -86,7 +86,7 @@ export const theme = {
     sansSerif: '\'Helvetica Neue\', Helvetica, Arial, sans-serif'
   },
   shadows  : {
-    textLight    : '1px 1px 3px rgba(255,255,255,.75)',
+    textLight    : '1px 1px 0 rgba(255,255,255,.75)',
     textDark     : '1px 1px 0 rgba(0,0,0,.25)',
     textDarkSmall: '1px 1px 3px rgba(0,0,0,.25)',
     textEmboss   :

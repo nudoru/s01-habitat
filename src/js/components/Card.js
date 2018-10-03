@@ -15,6 +15,8 @@ const Shape = styled('div')`
   white-space: normal;
   text-shadow: ${theme.shadows.textLight};
   img {
+    transition: all 1s ease-out;
+    transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
     z-index: -1;
     position: absolute;
     top: 0;
@@ -29,7 +31,17 @@ const Shape = styled('div')`
   p {
     font-size: 0.8rem;
   }
+  &:hover {
+    img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+  }
 `;
+
 
 class Card extends React.PureComponent {
   static defaultProps = {};

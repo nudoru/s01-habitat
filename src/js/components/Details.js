@@ -27,27 +27,4 @@ const Shape = styled('div')`
   }
 `;
 
-class Details extends React.PureComponent {
-
-  static defaultProps = {};
-  static propTypes = {};
-
-  state = {};
-
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {}
-
-  render() {
-    const {className=null, children, ...rest} = this.props;
-
-    let cls = [''];
-    cls.push(className);
-
-    return (<Shape className={cls.join(' ')} {...rest}>{children}</Shape>);
-  }
-}
-
-export default Details;
+export const Details = ({children, ...rest}) => <Shape {...rest}>{children}</Shape>;
