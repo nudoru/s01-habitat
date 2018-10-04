@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import {compose, identity} from 'ramda';
 import TransitionGroupPlus from 'react-transition-group-plus';
-import {NOOP, omit, getDOMElements} from './componentUtils';
+import {NOOP, omit, getDOMElements} from '../utils/componentUtils';
 
 /*
 Wrapper for GreenSock Animations and React components. Animations persist between

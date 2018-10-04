@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import _ from 'lodash';
+import {css} from 'emotion';
 import Global from './theme/Global'; // For global CSS reset + a few styles for html and body
 import * as Lorem from './utils/Lorem';
 
@@ -8,6 +9,9 @@ import Art from './components/Art';
 import Gallery from './components/Gallery';
 import {Desk} from "./components/Desk";
 import {Details} from "./components/Details";
+import {RoundIcon} from "./components/RoundIcon";
+import {SVGIcon} from "./components/SVGIcon";
+import {theme} from "./theme/Theme";
 
 const CardArt = require('../img/cropped-01.png');
 const BackgroundArt = require('../img/full-01.png');
@@ -15,10 +19,21 @@ const BackgroundArt = require('../img/full-01.png');
 // Otherwise new lorem is generated on each rerender
 const titles = _.range(7).map(e => Lorem.title(3,5));
 const content = _.range(7).map(e => Lorem.title(10,15));
+const iconColors = ['warm-flame','sunny-morning','dusty-grass','tempting-azue','ripe-malinka','malibu-beach','strong-bliss'];
+const colors = _.range(7).map(e => Lorem.oneOf(iconColors));
+const RoundIconArt = css`
+  margin: 0 auto;
+  margin-top: 5rem;
+  box-shadow: ${theme.shadows.dropShadow.lg};
+`;
+
+const SVGIconAdjust = css`
+  top: 5px;
+`;
 
 const TestArt = ({idx=0, ...rest}) => (<Art {...rest}>
   <Art.ACard><img src={CardArt}/><h1>{titles[idx]}</h1><p>{content[idx]}</p></Art.ACard>
-  <Art.ABackground><img src={BackgroundArt}/></Art.ABackground>
+  <Art.ABackground><img src={BackgroundArt}/><h1>{titles[idx]}</h1><RoundIcon className={RoundIconArt} color={colors[idx]}><SVGIcon className={SVGIconAdjust} name='package'></SVGIcon></RoundIcon></Art.ABackground>
 </Art>);
 
 const App = () => {

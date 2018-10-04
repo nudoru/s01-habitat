@@ -30,21 +30,11 @@ mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 50%,rgba(255,
 -webkit-mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 50%,rgba(255,255,255,0) 70%);
  */
 const BackgroundStyle = css`
-  opacity: 0.15;
   transition: all 1s ease-out;
   transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
-  z-index: 1;
-  width: ${theme.habitat.cardWidth + theme.habitat.backgroundSize}px;
-  height: ${theme.habitat.cardHeight + theme.habitat.backgroundSize}px;
-  background: transparent;
-  overflow: hidden;
   img {
     transition: all 1s ease-out;
     transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
-    position: relative;
-    transform: translate(${theme.habitat.backgroundSize - theme.habitat.backgroundSizeSelected}px, 0);
-    mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);
-    -webkit-mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);
   }
 `;
 
