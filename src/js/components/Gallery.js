@@ -2,11 +2,13 @@ import React from 'react';
 import _ from 'lodash';
 import styled from 'react-emotion';
 import {theme} from '../theme/Theme';
+import {Animate, TweenGroup} from "./Animate";
+import {Expo, TweenMax} from 'gsap';
 
 // Problem: Quickly switching focused items is jittery
+//transition: all 2s ease-out;
+//   transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
 const Shape = styled('div')`
-  transition: all 2s ease-out;
-  transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
   position: absolute;
   top: 100px;
   white-space: nowrap;
@@ -40,7 +42,7 @@ class Gallery extends React.PureComponent {
   }
 
   handleKeyPress = e => {
-    switch(e.key) {
+    switch (e.key) {
       case 'ArrowLeft':
       case 'ArrowUp':
         this.decrementFocusItem();
@@ -54,25 +56,25 @@ class Gallery extends React.PureComponent {
 
   incrementFocusItem() {
     let currentIdx = this.state.focusedIndex,
-        boundary = React.Children.count(this.props.children)-1;
+        boundary   = React.Children.count(this.props.children) - 1;
 
-    if(currentIdx++ < boundary) {
+    if (currentIdx++ < boundary) {
       this.onFocus(currentIdx)();
     }
   }
 
   decrementFocusItem() {
     let currentIdx = this.state.focusedIndex,
-        boundary = 0;
+        boundary   = 0;
 
-    if(currentIdx-- > boundary) {
+    if (currentIdx-- > boundary) {
       this.onFocus(currentIdx)();
     }
   }
 
   getCardCenterValue(index) {
-    let cardWidth    = theme.habitat.cardWidth + theme.habitat.backgroundSize,
-        leftSide     = index * cardWidth * -1;
+    let cardWidth = theme.habitat.cardWidth + theme.habitat.backgroundSize,
+        leftSide  = index * cardWidth * -1;
     return leftSide + (window.innerWidth / 2) - (cardWidth / 2);
   }
 
@@ -99,6 +101,13 @@ class Gallery extends React.PureComponent {
     });
   };
 
+  _slideArtTween = to => ({target}) => {
+    return TweenMax.to(target, 3, {
+      x   : to,
+      ease: Expo.easeOut
+    });
+  };
+
   render() {
     const {className = null, children: originalChildren, ...rest} = this.props;
 
@@ -113,8 +122,11 @@ class Gallery extends React.PureComponent {
       })
     );
 
-    return (<Shape className={cls.join(' ')} {...rest}
-                   style={{transform: `translateX(${this.state.focusedCardLeft}px)`}}>{children}</Shape>);
+    //style={{transform: `translateX(${this.state.focusedCardLeft}px)`}}
+
+    return (<TweenGroup tween={this._slideArtTween(this.state.focusedCardLeft)}>
+      <Shape className={cls.join(' ')} {...rest}>{children}</Shape>
+    </TweenGroup>);
   }
 }
 

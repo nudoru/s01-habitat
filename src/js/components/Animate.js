@@ -16,6 +16,9 @@ Borrowed ideas from https://github.com/azazdeaz/react-gsap-enhancer
 
 TODO
 
+- need to rereun tween on each update - need a prop to force it? Work around is to have
+  a new tween fn each run
+- update to work with React 16 refs
 - Add 'set' props to Animate container
 - pause handled enter / leave tweens
 - create wrapper object for each tween target so I don't get dom el's all the time

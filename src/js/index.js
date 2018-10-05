@@ -51,6 +51,7 @@ const App = () => {
     <Details>
       <h1>Sketch 1</h1>
       <p>Navigate with the arrow keys, click to expand.</p>
+      <p>Tested with Chrome 69 on my Mac.</p>
       <p>By <a href='https://twitter.com/nudoru'>Matt Perkins</a></p>
       <p>Inspired by <a href='https://dribbble.com/shots/4934380-Habitat'>Cosmin Capitanu</a></p>
       <p><a href='https://github.com/nudoru/s01-habitat'>Source code</a></p>
