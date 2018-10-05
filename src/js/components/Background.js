@@ -30,10 +30,14 @@ const Shape = styled('div')`
     font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 2rem;
+    line-height: 2rem;
+    width: ${theme.habitat.cardWidth *.75}px;
+    margin: 0 auto;
   }
   p {
     position: relative;
     font-size: 1.2rem;
+    width: 100px;
   }
 `;
 

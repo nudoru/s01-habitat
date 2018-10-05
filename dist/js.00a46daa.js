@@ -44306,7 +44306,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.15;\n  width: ", "px;\n  height: ", "px;\n  background: transparent;\n  overflow: hidden;\n  padding: 6rem;\n  text-align: center;\n  white-space: normal;\n  text-shadow: ", ";\n  img {\n    z-index: -1;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transform: translate(", "px, 0);\n    mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);\n    -webkit-mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);\n  }\n  h1 {\n    position: relative;\n    font-size: 1.8rem;\n    font-weight: 400;\n    margin-bottom: 2rem;\n  }\n  p {\n    position: relative;\n    font-size: 1.2rem;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  opacity: 0.15;\n  width: ", "px;\n  height: ", "px;\n  background: transparent;\n  overflow: hidden;\n  padding: 6rem;\n  text-align: center;\n  white-space: normal;\n  text-shadow: ", ";\n  img {\n    z-index: -1;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transform: translate(", "px, 0);\n    mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);\n    -webkit-mask-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);\n  }\n  h1 {\n    position: relative;\n    font-size: 1.8rem;\n    font-weight: 400;\n    margin-bottom: 2rem;\n    line-height: 2rem;\n    width: ", "px;\n    margin: 0 auto;\n  }\n  p {\n    position: relative;\n    font-size: 1.2rem;\n    width: 100px;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -44319,7 +44319,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-var Shape = (0, _reactEmotion.default)('div')(_templateObject(), _Theme.theme.habitat.cardWidth + _Theme.theme.habitat.backgroundSize, _Theme.theme.habitat.cardHeight + _Theme.theme.habitat.backgroundSize, _Theme.theme.shadows.textLight, _Theme.theme.habitat.backgroundSize - _Theme.theme.habitat.backgroundSizeSelected);
+var Shape = (0, _reactEmotion.default)('div')(_templateObject(), _Theme.theme.habitat.cardWidth + _Theme.theme.habitat.backgroundSize, _Theme.theme.habitat.cardHeight + _Theme.theme.habitat.backgroundSize, _Theme.theme.shadows.textLight, _Theme.theme.habitat.backgroundSize - _Theme.theme.habitat.backgroundSizeSelected, _Theme.theme.habitat.cardWidth * .75);
 
 var Background =
 /*#__PURE__*/
@@ -77910,11 +77910,11 @@ function (_React$PureComponent) {
       }); //style={{transform: `translateX(${this.state.focusedCardLeft}px)`}}
 
 
-      return _react.default.createElement(_Animate.Animate, null, _react.default.createElement(_Animate.TweenGroup, {
+      return _react.default.createElement(_Animate.TweenGroup, {
         tween: this._slideArtTween(this.state.focusedCardLeft)
       }, _react.default.createElement(Shape, _extends({
         className: cls.join(' ')
-      }, rest), children)));
+      }, rest), children));
     }
   }]);
 
